@@ -59,11 +59,11 @@
 }
 .img {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
 }
 .img > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .pageMetadataOverride:global(.__wab_instance) {
   max-width: 100%;
