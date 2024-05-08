@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -77,7 +77,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7EyJGSd7UttKZWYRvjnPLx",
@@ -107,6 +108,11 @@
           "id": "4S3XcZ9EO5aR",
           "name": "WhatsApp Image 2024-05-06 at 7.06.36 PM.jpeg",
           "filePath": "../public/plasmic/meetkibo/images/whatsAppImage20240506At70636PMjpeg.jpg"
+        },
+        {
+          "id": "afd7cmiBDocz",
+          "name": "IMG_7211.GIF",
+          "filePath": "../public/plasmic/meetkibo/images/img7211Gif.gif"
         }
       ],
       "indirect": false,

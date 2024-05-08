@@ -59,7 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import { PlasmicHead } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -81,7 +80,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   section?: Flex__<"section">;
-  htmlVideo?: Flex__<typeof Video>;
+  img?: Flex__<typeof PlasmicImg__>;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
 };
 
@@ -148,17 +147,24 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
           >
-            <Video
-              data-plasmic-name={"htmlVideo"}
-              data-plasmic-override={overrides.htmlVideo}
-              autoPlay={true}
-              className={classNames("__wab_instance", sty.htmlVideo)}
-              controls={true}
-              loop={true}
-              muted={true}
-              src={
-                "https://site-assets.plasmic.app/b575b34f4db16e4c8b91f3b3c4f0b054.mp4"
-              }
+            <PlasmicImg__
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/meetkibo/images/img7211Gif.gif",
+                fullWidth: 2048,
+                fullHeight: 2048,
+                aspectRatio: undefined
+              }}
             />
           </section>
           <PlasmicHead
@@ -178,9 +184,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "htmlVideo", "pageMetadataOverride"],
-  section: ["section", "htmlVideo"],
-  htmlVideo: ["htmlVideo"],
+  root: ["root", "section", "img", "pageMetadataOverride"],
+  section: ["section", "img"],
+  img: ["img"],
   pageMetadataOverride: ["pageMetadataOverride"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -189,7 +195,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
-  htmlVideo: typeof Video;
+  img: typeof PlasmicImg__;
   pageMetadataOverride: typeof PlasmicHead;
 };
 
@@ -254,7 +260,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
-    htmlVideo: makeNodeComponent("htmlVideo"),
+    img: makeNodeComponent("img"),
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
 
     // Metadata about props expected for PlasmicHomepage
