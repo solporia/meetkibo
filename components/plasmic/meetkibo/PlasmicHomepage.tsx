@@ -175,7 +175,7 @@ function PlasmicHomepage__RenderFunc(props: {
             image={
               "/plasmic/meetkibo/images/whatsAppImage20240506At70636PMjpeg.jpg"
             }
-            title={"meetkibo"}
+            title={"Meet Kibo"}
           />
         </div>
       </div>
