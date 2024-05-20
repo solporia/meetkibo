@@ -263,7 +263,9 @@ function PlasmicHomepage__RenderFunc(props: {
               displayMinHeight={"0"}
               displayMinWidth={"0"}
               displayWidth={
-                hasVariant(globalVariants, "screen", "tablet") ? "60%" : "40%"
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "60%"
+                  : "40%"
               }
               loading={"lazy"}
               src={{
@@ -283,7 +285,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={
-                  hasVariant(globalVariants, "screen", "tablet") ? "600px" : "0"
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "600px"
+                    : "0"
                 }
                 displayWidth={"auto"}
                 loading={"lazy"}
