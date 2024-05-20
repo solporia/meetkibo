@@ -77,8 +77,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "7EyJGSd7UttKZWYRvjnPLx",
@@ -100,9 +99,53 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/"
+        },
+        {
+          "id": "MrhOC2NBM2Qt",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "7EyJGSd7UttKZWYRvjnPLx",
+          "renderModuleFilePath": "plasmic/meetkibo/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/meetkibo/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "wqmCo9mRyVtE",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "7EyJGSd7UttKZWYRvjnPLx",
+          "renderModuleFilePath": "plasmic/meetkibo/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/meetkibo/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
-      "icons": [],
+      "icons": [
+        {
+          "id": "kP3Sh-djLURo",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/meetkibo/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "cNnskVLkWJzV",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/meetkibo/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "d6DNsQZPOKDt",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/meetkibo/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
       "images": [
         {
           "id": "4S3XcZ9EO5aR",
@@ -113,6 +156,26 @@
           "id": "afd7cmiBDocz",
           "name": "IMG_7211.GIF",
           "filePath": "../public/plasmic/meetkibo/images/img7211Gif.gif"
+        },
+        {
+          "id": "JVEJGOD2xuai",
+          "name": "Wallet_checker_kibo.png",
+          "filePath": "../public/plasmic/meetkibo/images/walletCheckerKibopng.png"
+        },
+        {
+          "id": "D_PjJtyIgFqA",
+          "name": "Gun_wallet_checker.png",
+          "filePath": "../public/plasmic/meetkibo/images/gunWalletCheckerpng.png"
+        },
+        {
+          "id": "Xzb5QMMbxYbX",
+          "name": "KiboWallet.png",
+          "filePath": "../public/plasmic/meetkibo/images/kiboWalletpng.png"
+        },
+        {
+          "id": "_AfzZrTN-4dY",
+          "name": "Gun_wallet_checker-onli.png",
+          "filePath": "../public/plasmic/meetkibo/images/gunWalletCheckerOnlipng.png"
         }
       ],
       "indirect": false,
@@ -149,6 +212,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.329",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.329/dist/plasmic.schema.json"
+  "cliVersion": "0.1.330",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
 }
